@@ -11,3 +11,4 @@ export { execa };
 export { inquirer };
 export { createDebug, Debugger };
 export { isLernaPackage } from './isLernaPackage';
+export { mergeConfig } from './mergeConfig';
