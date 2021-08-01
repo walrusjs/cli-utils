@@ -5,6 +5,7 @@ import fs from 'fs-extra';
 import chalk from 'chalk';
 import createDebug, { Debugger } from 'debug';
 
+export { default as rimraf } from 'rimraf';
 export { default as joycon } from './joycon';
 export { chalk };
 export { cac };
