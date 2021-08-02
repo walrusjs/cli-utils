@@ -4,7 +4,7 @@ import { getPackagesSync } from '@lerna/project';
 import { QueryGraph } from '@lerna/query-graph';
 import { filterPackages } from '@lerna/filter-packages';
 
-interface Options {
+export interface Options {
   /**
    * 是否按照依赖进行排序处理
    * @default true
