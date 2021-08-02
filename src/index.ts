@@ -13,5 +13,7 @@ export { fs };
 export { execa };
 export { inquirer };
 export { createDebug, Debugger };
+
 export { isLernaPackage } from './isLernaPackage';
+export { getLernaPackages } from './getLernaPackages';
 export { mergeConfig } from './mergeConfig';
