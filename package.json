@@ -16,6 +16,9 @@
     "release": "release"
   },
   "dependencies": {
+    "@lerna/filter-packages": "4.0.0",
+    "@lerna/project": "4.0.0",
+    "@lerna/query-graph": "4.0.0",
     "@types/debug": "4.1.7",
     "@types/fs-extra": "9.0.12",
     "@types/inquirer": "7.3.3",
@@ -37,11 +40,11 @@
     "rimraf": "^3.0.2",
     "typescript": "4.3.5"
   },
+  "resolutions": {
+    "@walrus/cli-utils": "portal:/Users/aqian/Documents/projects/wangxingkang/cli-utils"
+  },
   "publishConfig": {
     "registry": "https://registry.npmjs.org",
     "access": "public"
-  },
-  "resolutions": {
-    "@walrus/cli-utils": "portal:/Users/aqian/Documents/projects/wangxingkang/cli-utils"
   }
 }
