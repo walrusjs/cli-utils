@@ -2442,7 +2442,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@lerna/filter-packages@npm:4.0.0, @lerna/filter-packages@npm:^4.0.0":
+"@lerna/filter-packages@npm:4.0.0":
   version: 4.0.0
   resolution: "@lerna/filter-packages@npm:4.0.0"
   dependencies:
@@ -2743,7 +2743,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@lerna/project@npm:4.0.0, @lerna/project@npm:^4.0.0":
+"@lerna/project@npm:4.0.0":
   version: 4.0.0
   resolution: "@lerna/project@npm:4.0.0"
   dependencies:
@@ -2818,7 +2818,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@lerna/query-graph@npm:4.0.0, @lerna/query-graph@npm:^4.0.0":
+"@lerna/query-graph@npm:4.0.0":
   version: 4.0.0
   resolution: "@lerna/query-graph@npm:4.0.0"
   dependencies:
@@ -3814,6 +3814,9 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@walrus/cli-utils@portal:/Users/aqian/Documents/projects/wangxingkang/cli-utils::locator=%40walrus%2Fcli-utils%40workspace%3A."
   dependencies:
+    "@lerna/filter-packages": 4.0.0
+    "@lerna/project": 4.0.0
+    "@lerna/query-graph": 4.0.0
     "@types/debug": 4.1.7
     "@types/fs-extra": 9.0.12
     "@types/inquirer": 7.3.3
@@ -3839,9 +3842,9 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@walrus/cli-utils@workspace:."
   dependencies:
-    "@lerna/filter-packages": ^4.0.0
-    "@lerna/project": ^4.0.0
-    "@lerna/query-graph": ^4.0.0
+    "@lerna/filter-packages": 4.0.0
+    "@lerna/project": 4.0.0
+    "@lerna/query-graph": 4.0.0
     "@types/debug": 4.1.7
     "@types/fs-extra": 9.0.12
     "@types/inquirer": 7.3.3
@@ -3858,6 +3861,8 @@ __metadata:
     inquirer: 8.1.2
     joycon: 3.0.1
     joycon-ts-loader: 3.0.2
+    normalize-package-data: ^3.0.2
+    parse-json: ^5.2.0
     rimraf: ^3.0.2
     typescript: 4.3.5
   languageName: unknown
@@ -10162,7 +10167,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"parse-json@npm:^5.0.0":
+"parse-json@npm:^5.0.0, parse-json@npm:^5.2.0":
   version: 5.2.0
   resolution: "parse-json@npm:5.2.0"
   dependencies:

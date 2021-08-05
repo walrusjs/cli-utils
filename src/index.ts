@@ -17,3 +17,7 @@ export { createDebug, Debugger };
 export { isLernaPackage } from './isLernaPackage';
 export { getLernaPackages } from './getLernaPackages';
 export { mergeConfig } from './mergeConfig';
+export {
+  readPackageSync,
+  readPackageAsync
+} from './readPkg';
