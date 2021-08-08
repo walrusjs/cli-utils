@@ -14,6 +14,8 @@ export { execa };
 export { inquirer };
 export { createDebug, Debugger };
 
+export { isDir } from './isDir';
+export { isFile } from './isFile';
 export { isLernaPackage } from './isLernaPackage';
 export { getLernaPackages } from './getLernaPackages';
 export { mergeConfig } from './mergeConfig';
