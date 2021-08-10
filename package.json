@@ -23,6 +23,7 @@
     "@types/fs-extra": "9.0.12",
     "@types/inquirer": "7.3.3",
     "@types/rimraf": "^3.0.1",
+    "@walrus/joycon-ts-loader": "1.0.0",
     "cac": "6.7.3",
     "chalk": "4.1.2",
     "debug": "4.3.2",
@@ -30,9 +31,8 @@
     "fs-extra": "10.0.0",
     "inquirer": "8.1.2",
     "joycon": "3.0.1",
-    "joycon-ts-loader": "3.0.2",
-    "normalize-package-data": "^3.0.2",
-    "parse-json": "^5.2.0"
+    "normalize-package-data": "3.0.2",
+    "parse-json": "5.2.0"
   },
   "devDependencies": {
     "@walrus/cli": "1.3.4",
