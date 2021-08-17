@@ -3610,7 +3610,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/lodash@npm:^4.14.158":
+"@types/lodash@npm:^4.14.158, @types/lodash@npm:^4.14.172":
   version: 4.14.172
   resolution: "@types/lodash@npm:4.14.172"
   checksum: d4b9c66aa1775ca9105f95fdaf92b8c7ee646fcb75fa8c0617020456470b140f9204335a66e152f269f9cd531634ac3d0caa3f85ce3acdad9bc6951aa6e89aae
@@ -3833,6 +3833,7 @@ __metadata:
     "@types/debug": 4.1.7
     "@types/fs-extra": 9.0.12
     "@types/inquirer": 7.3.3
+    "@types/lodash": ^4.14.172
     "@types/rimraf": ^3.0.1
     "@walrus/cli": 1.3.4
     "@walrus/commit": 1.2.1
@@ -3846,6 +3847,7 @@ __metadata:
     fs-extra: 10.0.0
     inquirer: 8.1.2
     joycon: 3.0.1
+    lodash: ^4.17.21
     normalize-package-data: 3.0.2
     parse-json: 5.2.0
     rimraf: ^3.0.2

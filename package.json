@@ -22,6 +22,7 @@
     "@types/debug": "4.1.7",
     "@types/fs-extra": "9.0.12",
     "@types/inquirer": "7.3.3",
+    "@types/lodash": "4.14.172",
     "@types/rimraf": "^3.0.1",
     "@walrus/joycon-ts-loader": "1.0.0",
     "cac": "6.7.3",
@@ -31,6 +32,7 @@
     "fs-extra": "10.0.0",
     "inquirer": "8.1.2",
     "joycon": "3.0.1",
+    "lodash": "4.17.21",
     "normalize-package-data": "3.0.2",
     "parse-json": "5.2.0"
   },
