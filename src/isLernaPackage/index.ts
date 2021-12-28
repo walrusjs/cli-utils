@@ -1,4 +1,4 @@
-import { existsSync } from 'fs';
+import { existsSync } from 'fs-extra';
 import { join } from 'path';
 
 export function isLernaPackage(root: string) {

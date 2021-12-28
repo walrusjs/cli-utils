@@ -1,7 +1,29 @@
 import JoyCon from 'joycon';
-import JoyconTsLoader from '@walrus/joycon-ts-loader';
+import path from 'path';
+import { bundleRequire } from 'bundle-require';
 
-const joycon = new JoyCon();
-joycon.addLoader(JoyconTsLoader);
+export async function loadConfig(
+  cwd: string,
+  configFiles: string[],
+) {
+  const configJoycon = new JoyCon();
 
-export default joycon;
+  const configPath = await configJoycon.resolve(
+    configFiles,
+    cwd,
+    path.parse(cwd).root
+  );
+
+  if (configPath) {
+    const config = await bundleRequire({
+      filepath: configPath,
+    })
+
+    return {
+      path: configPath,
+      data: config.mod.tsup || config.mod.default || config.mod,
+    }
+  }
+
+  return {};
+}

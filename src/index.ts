@@ -7,7 +7,7 @@ import _ from 'lodash';
 import createDebug, { Debugger } from 'debug';
 
 export { default as rimraf } from 'rimraf';
-export { default as joycon } from './joycon';
+export { loadConfig } from './joycon';
 export { chalk };
 export { cac };
 export { fs };
