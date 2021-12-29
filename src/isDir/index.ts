@@ -1,6 +1,6 @@
-import { promises as fs } from 'fs';
+import { fsExtra } from '@umijs/utils';
 
-const stat = fs.stat;
+const stat = fsExtra.promises.stat;
 
 /**
  * 判断是否为目录

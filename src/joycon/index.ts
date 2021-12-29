@@ -1,13 +1,12 @@
-import JoyCon from 'joycon';
 import path from 'path';
-import { bundleRequire } from 'bundle-require';
+import JoyCon from 'joycon';
+import { bundleRequire } from '@walrus/bundle-require';
 
-export async function loadConfig(
+export async function loadConfig<T = any>(
   cwd: string,
   configFiles: string[],
-) {
+): Promise<{ path?: string; data?: T; }> {
   const configJoycon = new JoyCon();
-
   const configPath = await configJoycon.resolve(
     configFiles,
     cwd,
@@ -16,8 +15,9 @@ export async function loadConfig(
 
   if (configPath) {
     const config = await bundleRequire({
-      filepath: configPath,
-    })
+      cwd,
+      filePath: configPath
+    });
 
     return {
       path: configPath,
@@ -25,5 +25,5 @@ export async function loadConfig(
     }
   }
 
-  return {};
+  return {}
 }

@@ -1,7 +1,5 @@
-/// <reference types="../../typings" />
-
-import { getPackagesSync } from '@lerna/project';
 import { QueryGraph } from '@lerna/query-graph';
+import { getPackagesSync } from '@lerna/project';
 import { filterPackages } from '@lerna/filter-packages';
 
 export interface Options {
@@ -25,7 +23,7 @@ export interface Options {
  * 获取lerna项目包集合
  * @param cwd
  */
-export async function getLernaPackages(cwd: string, ops: Options = {}): Promise<any[]> {
+export async function getPackages(cwd: string, ops: Options = {}): Promise<any[]> {
   const {
     stream = true,
     include = [],

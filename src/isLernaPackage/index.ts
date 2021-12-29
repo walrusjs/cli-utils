@@ -1,6 +1,6 @@
-import { existsSync } from 'fs-extra';
+import { fsExtra } from '@umijs/utils';
 import { join } from 'path';
 
 export function isLernaPackage(root: string) {
-  return existsSync(join(root, 'lerna.json'));
+  return fsExtra.existsSync(join(root, 'lerna.json'));
 }

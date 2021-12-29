@@ -1,27 +1,38 @@
+import {
+  chalk,
+  lodash,
+  rimraf,
+  fsExtra,
+  debug,
+  deepmerge,
+} from '@umijs/utils';
+import cac from '../compiled/cac';
+import execa from '../compiled/execa';
 import inquirer from 'inquirer';
-import execa from 'execa';
-import cac from 'cac';
-import fs from 'fs-extra';
-import chalk from 'chalk';
-import _ from 'lodash';
-import createDebug, { Debugger } from 'debug';
 
-export { default as rimraf } from 'rimraf';
 export { loadConfig } from './joycon';
-export { chalk };
-export { cac };
-export { fs };
-export { execa };
-export { inquirer };
-export { createDebug, Debugger };
-export { _ };
-
 export { isDir } from './isDir';
 export { isFile } from './isFile';
 export { isLernaPackage } from './isLernaPackage';
-export { getLernaPackages } from './getLernaPackages';
+export { getPackages } from './getPackages';
 export { mergeConfig } from './mergeConfig';
 export {
   readPackageSync,
   readPackageAsync
 } from './readPkg';
+
+
+export {
+  chalk,
+  lodash,
+  rimraf,
+  fsExtra,
+  debug,
+  deepmerge,
+};
+
+export {
+  cac,
+  execa,
+  inquirer,
+}

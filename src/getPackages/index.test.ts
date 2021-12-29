@@ -1,6 +1,6 @@
 import path from 'path';
 import fs from 'fs-extra';
-import { getLernaPackages } from './';
+import { getPackages } from './';
 
 export const FIXTURES_DIR = path.resolve(__dirname, 'fixtures');
 
@@ -22,7 +22,7 @@ describe('default', () => {
   it('获取所有的包', async () => {
     expect.assertions(1);
 
-    const pkgs = await getLernaPackages(fixturePath, {
+    const pkgs = await getPackages(fixturePath, {
       stream: false
     });
 
@@ -38,7 +38,7 @@ describe('customize', () => {
   it('获取所有的包', async () => {
     expect.assertions(1);
 
-    const pkgs = await getLernaPackages(fixturePath, {
+    const pkgs = await getPackages(fixturePath, {
       stream: false,
       showPrivate: true,
     });
@@ -51,7 +51,7 @@ describe('customize', () => {
   it('过滤私有的包', async () => {
     expect.assertions(1);
 
-    const pkgs = await getLernaPackages(fixturePath, {
+    const pkgs = await getPackages(fixturePath, {
       stream: false,
       showPrivate: false,
     });
@@ -64,7 +64,7 @@ describe('customize', () => {
   it('按照依赖顺序获取所有的包', async () => {
     expect.assertions(1);
 
-    const pkgs = await getLernaPackages(fixturePath, {
+    const pkgs = await getPackages(fixturePath, {
       stream: true,
       showPrivate: true,
     });
@@ -77,7 +77,7 @@ describe('customize', () => {
   it('设置包含部分包', async () => {
     expect.assertions(1);
 
-    const pkgs = await getLernaPackages(fixturePath, {
+    const pkgs = await getPackages(fixturePath, {
       stream: false,
       showPrivate: true,
       include: [
@@ -92,7 +92,7 @@ describe('customize', () => {
   it('设置包含部分包', async () => {
     expect.assertions(1);
 
-    const pkgs = await getLernaPackages(fixturePath, {
+    const pkgs = await getPackages(fixturePath, {
       stream: false,
       showPrivate: true,
       exclude: [
