@@ -1,6 +1,6 @@
 {
   "name": "@walrus/cli-utils",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "repository": "git@github.com:walrusjs/cli-utils.git",
   "author": "wangxingkang <wang_xingkang@qq.com>",
   "license": "MIT",
