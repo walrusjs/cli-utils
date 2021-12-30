@@ -6,6 +6,7 @@ import {
   fsExtra,
   debug,
   yParser,
+  semver,
   deepmerge,
 } from '@umijs/utils';
 import cac from '../compiled/cac';
@@ -29,6 +30,7 @@ export {
   chalk,
   lodash,
   rimraf,
+  semver,
   fsExtra,
   debug,
   yParser,
