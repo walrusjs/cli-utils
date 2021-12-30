@@ -1,6 +1,6 @@
-import { QueryGraph } from '@lerna/query-graph';
-import { getPackagesSync } from '@lerna/project';
-import { filterPackages } from '@lerna/filter-packages';
+const { QueryGraph } = require('@lerna/query-graph');
+const { getPackagesSync } = require('@lerna/project');
+const { filterPackages } = require('@lerna/filter-packages');
 
 export interface Options {
   /**

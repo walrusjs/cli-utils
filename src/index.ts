@@ -1,16 +1,18 @@
 import {
+  glob,
   chalk,
   lodash,
   rimraf,
   fsExtra,
   debug,
+  yParser,
   deepmerge,
 } from '@umijs/utils';
 import cac from '../compiled/cac';
 import execa from '../compiled/execa';
 import inquirer from 'inquirer';
 
-export { loadConfig } from './joycon';
+export { loadConfig } from './loadConfig';
 export { isDir } from './isDir';
 export { isFile } from './isFile';
 export { isLernaPackage } from './isLernaPackage';
@@ -23,11 +25,13 @@ export {
 
 
 export {
+  glob,
   chalk,
   lodash,
   rimraf,
   fsExtra,
   debug,
+  yParser,
   deepmerge,
 };
 
