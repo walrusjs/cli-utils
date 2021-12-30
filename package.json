@@ -1,6 +1,6 @@
 {
   "name": "@walrus/cli-utils",
-  "version": "2.0.2",
+  "version": "2.0.5",
   "repository": "git@github.com:walrusjs/cli-utils.git",
   "author": "wangxingkang <wang_xingkang@qq.com>",
   "license": "MIT",
@@ -11,7 +11,7 @@
     "compiled"
   ],
   "scripts": {
-    "build": "rimraf dist && tsc -p tsconfig.build.json",
+    "build": "tsc -p tsconfig.build.json",
     "build:deps": "esno ./scripts/bundleDeps.ts",
     "test": "walrus-test",
     "commit": "commit",
@@ -21,26 +21,22 @@
     "@lerna/filter-packages": "4.0.0",
     "@lerna/project": "4.0.0",
     "@lerna/query-graph": "4.0.0",
-    "@umijs/utils": "^4.0.0-beta.14",
-    "@walrus/bundle-require": "^1.0.1",
+    "@umijs/utils": "4.0.0-beta.14",
+    "@walrus/bundle-require": "1.1.0",
+    "cac": "6.7.12",
     "esbuild": "0.14.9",
     "inquirer": "8.2.0",
-    "joycon": "3.1.1",
-    "normalize-package-data": "3.0.3",
-    "parse-json": "6.0.2"
+    "joycon": "3.1.1"
   },
   "devDependencies": {
     "@types/inquirer": "^8.1.3",
-    "@types/normalize-package-data": "^2.4.1",
     "@vercel/ncc": "^0.33.1",
     "@walrus/cli": "1.3.4",
     "@walrus/test": "1.3.0",
-    "cac": "6.7.12",
     "dts-packer": "^0.0.2",
-    "esno": "^0.13.0",
+    "cac": "6.7.12",
     "execa": "5.1.1",
-    "rimraf": "^3.0.2",
-    "tsup": "^5.11.9",
+    "esno": "^0.13.0",
     "typescript": "4.5.4",
     "zx": "^4.2.0"
   },
@@ -48,16 +44,12 @@
     "deps": [
       "cac",
       "execa",
-      "joycon",
-      "normalize-package-data",
-      "parse-json"
+      "joycon"
     ],
     "externals": {
       "cac": "$$LOCAL",
       "execa": "$$LOCAL",
-      "joycon": "$$LOCAL",
-      "normalize-package-data": "$$LOCAL",
-      "parse-json": "$$LOCAL"
+      "joycon": "$$LOCAL"
     }
   },
   "publishConfig": {

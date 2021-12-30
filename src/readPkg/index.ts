@@ -1,26 +1,18 @@
-import fs, { promises } from 'fs';
 import path from 'path';
-import parseJson from 'parse-json';
-import normalizePackageData from 'normalize-package-data';
+import { fsExtra } from '@umijs/utils';
+import { jsonParse } from '@walrus/bundle-require';
 
-export async function readPackageAsync({cwd = process.cwd(), normalize = true} = {}) {
+export function readPackage(cwd = process.cwd()) {
 	const filePath = path.resolve(cwd, 'package.json');
-	const json = parseJson(await promises.readFile(filePath, 'utf8'));
 
-	if (normalize) {
-		normalizePackageData(json);
-	}
+  if (fsExtra.existsSync(filePath)) {
+    const contents = fsExtra.readFileSync(filePath, 'utf8');
 
-	return json;
-}
+    return {
+      data: jsonParse(contents),
+      path: filePath
+    }
+  }
 
-export function readPackageSync({cwd = process.cwd(), normalize = true} = {}) {
-	const filePath = path.resolve(cwd, 'package.json');
-	const json = parseJson(fs.readFileSync(filePath, 'utf8'));
-
-	if (normalize) {
-		normalizePackageData(json);
-	}
-
-	return json;
+  return {}
 }
