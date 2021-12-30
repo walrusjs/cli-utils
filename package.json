@@ -22,7 +22,7 @@
     "@lerna/project": "4.0.0",
     "@lerna/query-graph": "4.0.0",
     "@umijs/utils": "4.0.0-beta.14",
-    "@walrus/bundle-require": "1.1.0",
+    "@walrus/bundle-require": "1.2.0",
     "cac": "6.7.12",
     "esbuild": "0.14.9",
     "inquirer": "8.2.0",
