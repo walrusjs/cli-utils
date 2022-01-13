@@ -21,7 +21,7 @@
     "@lerna/filter-packages": "4.0.0",
     "@lerna/project": "4.0.0",
     "@lerna/query-graph": "4.0.0",
-    "@umijs/utils": "4.0.0-beta.14",
+    "@umijs/utils": "4.0.0-beta.15",
     "@walrus/bundle-require": "1.2.1",
     "cac": "6.7.12",
     "esbuild": "0.14.9",

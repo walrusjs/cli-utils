@@ -5,9 +5,9 @@ specifiers:
   '@lerna/project': 4.0.0
   '@lerna/query-graph': 4.0.0
   '@types/inquirer': ^8.1.3
-  '@umijs/utils': 4.0.0-beta.14
+  '@umijs/utils': 4.0.0-beta.15
   '@vercel/ncc': ^0.33.1
-  '@walrus/bundle-require': 1.1.0
+  '@walrus/bundle-require': 1.2.1
   '@walrus/cli': 1.3.4
   '@walrus/plugin-release': ^1.14.3
   '@walrus/test': 1.3.0
@@ -25,8 +25,8 @@ dependencies:
   '@lerna/filter-packages': 4.0.0
   '@lerna/project': 4.0.0
   '@lerna/query-graph': 4.0.0
-  '@umijs/utils': 4.0.0-beta.14
-  '@walrus/bundle-require': 1.1.0_esbuild@0.14.9
+  '@umijs/utils': 4.0.0-beta.15
+  '@walrus/bundle-require': 1.2.1_esbuild@0.14.9
   cac: 6.7.12
   esbuild: 0.14.9
   inquirer: 8.2.0
@@ -4120,6 +4120,14 @@ packages:
     dependencies:
       chokidar: 3.5.2
       clipboardy: 2.3.0
+    dev: true
+
+  /@umijs/utils/4.0.0-beta.15:
+    resolution: {integrity: sha512-N9uV2Qt8e9Xz+9IJDcTZrljYkKF1ue/KTGTrAC12xwofoGpQcOM9r5zVXhFjix8FoImbmQpYpmp2aqsE/2BsRg==}
+    dependencies:
+      chokidar: 3.5.2
+      clipboardy: 2.3.0
+    dev: false
 
   /@vercel/ncc/0.33.1:
     resolution: {integrity: sha512-Mlsps/P0PLZwsCFtSol23FGqT3FhBGb4B1AuGQ52JTAtXhak+b0Fh/4T55r0/SVQPeRiX9pNItOEHwakGPmZYA==}
@@ -4132,6 +4140,16 @@ packages:
       esbuild: '>=0.13'
     dependencies:
       esbuild: 0.14.9
+    dev: true
+
+  /@walrus/bundle-require/1.2.1_esbuild@0.14.9:
+    resolution: {integrity: sha512-Hp13otCoB4wwCAWAL0itCRqhwXZeHNkm3HE7Tw02rGd3SjcYxnmBV/qqmMdTpVDMTUTWkJ1TJzQGHdUXOZMCXg==}
+    peerDependencies:
+      esbuild: '>=0.13'
+    dependencies:
+      esbuild: 0.14.9
+      strip-json-comments: 3.1.1
+    dev: false
 
   /@walrus/cli-utils/2.0.5:
     resolution: {integrity: sha512-FUkpzgIw7KJsPVFdPwOR7Ch0kLQfii3rEolQe6nCQLHlsTPmLieB+pvdMe4YeQ4QUKxWz+j/8RTTT6r4/Zvmgg==}
@@ -10281,6 +10299,11 @@ packages:
     dependencies:
       min-indent: 1.0.1
     dev: true
+
+  /strip-json-comments/3.1.1:
+    resolution: {integrity: sha512-6fPc+R4ihwqP6N/aIv2f1gMH8lOVtWQHoqC4yK6oSDVVocumAsfCqjkXnqiYMhmMwS/mEHLp7Vehlt3ql6lEig==}
+    engines: {node: '>=8'}
+    dev: false
 
   /strong-log-transformer/2.1.0:
     resolution: {integrity: sha512-B3Hgul+z0L9a236FAUC9iZsL+nVHgoCJnqCbN588DjYxvGXaXaaFbfmQ/JhvKjZwsOukuR72XbHv71Qkug0HxA==}
