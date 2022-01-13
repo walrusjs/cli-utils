@@ -21,6 +21,8 @@ export {
   debug,
   yParser,
   deepmerge,
+  BaseGenerator,
+  prompts,
 } from '@umijs/utils';
 
 export {
